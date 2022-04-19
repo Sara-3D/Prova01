@@ -3,7 +3,6 @@ FROM debian:sid-20181112-slim
 # prevent apt-get from prompting for keyboard choice
 #  https://superuser.com/questions/1356914/how-to-install-xserver-xorg-in-unattended-mode
 ENV DEBIAN_FRONTEND=noninteractive
-COPY cleaner_dpkg.txt /etc/dpkg/dpkg.cfg.d/01_nodoc
 
 
 ################################################################################
@@ -80,19 +79,6 @@ COPY install.sh .
 ################################################################################
 # mybinder requirement
 RUN chown ${NB_USER} ${HOME} ${HOME}/Slicer-*
-
-
-################################################################################
-# trying nbnovnc
-RUN apt-get -y -q install tightvncserver novnc websockify supervisor xinit \
-                          git sudo
-
-RUN pip3 install -e git+https://github.com/ryanlovett/nbnovnc git+https://github.com/jupyterhub/nbserverproxy
-
-RUN jupyter serverextension enable  --py nbnovnc && \
-    jupyter nbextension     install --py nbnovnc && \
-    jupyter nbextension     enable  --py nbnovnc
-
 
 ################################################################################
 # need to run Slicer as non-root because
