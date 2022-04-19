@@ -1,10 +1,3 @@
-FROM debian:sid-20181112-slim
-
-# prevent apt-get from prompting for keyboard choice
-#  https://superuser.com/questions/1356914/how-to-install-xserver-xorg-in-unattended-mode
-ENV DEBIAN_FRONTEND=noninteractive
-
-
 ################################################################################
 # - update apt, set up certs, run netselect to get fast mirror
 # - reduce apt gravity
