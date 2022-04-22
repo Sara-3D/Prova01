@@ -3,4 +3,8 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sara-3D/Prova01/main?labpath=07_OpenSlicer.ipynb)
 
 
-ù[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sara-3D/Prova01/main?labpath=07_OpenSlicer.ipynb)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sara-3D/Prova01/main?labpath=07_OpenSlicer.ipynb)
+
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Sara-3D/Prova01/main?labpath=voila%2Frender%2Fpath%2Fto%2F07_OpenSlicer.ipynb)
